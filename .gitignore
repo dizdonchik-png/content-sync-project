@@ -1,0 +1,37 @@
+# Настройки окружения
+.env
+.env.*
+!.env.example
+
+# Зависимости
+backend/vendor/
+frontend/node_modules/
+
+# Сборка и временные файлы Next.js
+frontend/.next/
+frontend/out/
+frontend/build/
+frontend/.turbo/
+
+# Специфичные файлы Bedrock и WordPress
+backend/web/app/uploads/*
+!backend/web/app/uploads/index.php
+backend/web/wp/
+backend/.env
+
+# Логи и временные файлы
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.eslintcache
+
+# Системные файлы и настройки IDE
+.DS_Store
+.vscode/
+.idea/
+Thumbs.db
+
+# Данные Docker (если вы создаете локальные папки для volumes)
+docker/mysql_data/
+**/.dockerignore
